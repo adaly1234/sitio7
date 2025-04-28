@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Campaña Contra el Tráfico de Mujeres</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para la galería */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .gallery-item {
+            border: 3px solid #8e24aa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            border-color: #d81b60;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 2px solid #8e24aa;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #6a1b9a;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería Visual</h1>
+        <p>Carteles de concientización sobre trata de mujeres</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="descripcion.html">Descripción</a></li>
+            <li><a href="galeri.html">Galería</a></li>
+            <li><a href="sitios.html">Organizaciones</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <section>
+            <h2>Material para compartir</h2>
+            <p>Utiliza estos carteles en redes sociales para crear conciencia:</p>
+            
+            <div class="gallery-container">
+                <!-- Cartel 1 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer1.jpg" alt="Cartel: No es migración, es trata" class="gallery-img">
+                </div>
+                
+                <!-- Cartel 2 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer2.jpg" alt="Cartel: Señales de alerta" class="gallery-img">
+                </div>
+                
+                <!-- Cartel 3 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer3.jpg" alt="Cartel: Las víctimas están entre nosotros" class="gallery-img">
+                </div>
+                
+                <!-- Cartel 4 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer4.jpg" alt="Cartel: Denuncia anónima" class="gallery-img">
+                </div>
+                
+                <!-- Cartel 5 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer5.jpg" alt="Cartel: No compres vidas" class="gallery-img">
+                </div>
+                
+                <!-- Cartel 6 -->
+                <div class="gallery-item">
+                    <img src="imag/mujer6.jpg" alt="Cartel: Rompe el silencio" class="gallery-img">
+                   
+
+                </div>
+                 <!-- Cartel 7 -->
+                 <div class="gallery-item">
+                    <img src="imag/mujer7.jpg" alt="Cartel: Rompe el silencio" class="gallery-img">
+                   
+
+                    
+                <div class="gallery-item">
+                    <img src="imag/mujer8.jpg" alt="Cartel: Rompe el silencio" class="gallery-img">
+                    
+            </div>
+
+        </section>
+    </main>
+    
+   
+</body>
+</html>
